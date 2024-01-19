@@ -1,1 +1,4 @@
 O javascript foi desenvolvido pela empresa Netscape por Brendan Eich e foi padronizado como ECMAScript
+
+
+			

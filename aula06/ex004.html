@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de script</title>
+    <style>
+        body{
+            background-color: rgb(0, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+        }
+
+        div.teste{
+        text-align: center;
+        border: 2px solid rgba(0, 0, 0, 0.346);
+        width: 1000px;
+        margin: auto;
+        padding: 14px;
+        margin-top: 15px;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.369);
+        color: white;
+        line-height: 150%;
+
+        }
+
+        strong{
+            color: rgb(127, 255, 212);
+        }
+
+        p{
+            text-align: center;
+        }
+
+
+    
+
+    </style>
+</head>
+<body>
+    <div class="teste">
+        <script>
+            var nome = window.prompt('Qual seu nome ? ')
+            document.write(`Olá, <strong>${nome}</strong> ! seu nome tem ${nome.length} letras. <br>`)
+            document.write(`Seu nome em letras maiusculas ficaria assim "${nome.toUpperCase()}"`)
+            document.write(`Seu nome em minusculas ficaria assim "${nome.toLowerCase()}"`)
+        </script>
+    </div>
+</body>
+</html>
