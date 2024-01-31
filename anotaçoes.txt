@@ -1,4 +1,99 @@
 O javascript foi desenvolvido pela empresa Netscape por Brendan Eich e foi padronizado como ECMAScript
 
+"===" em javascript serve para sabermos se literalmente dois valores são iguais até nos tipos
 
-			
+"!==" em javascript serve para sabermos literamente se dois valores são diferentes até nos tipos
+
+-----------------------------
+Operadores Logicos
+
+1 - " ! "  -  not,  não,  negação
+
+2 - " && " -  and,  e,    conjunção
+
+3 - " || " -  or,  ou,   disjunção
+    
+ordem em que os o js resolvem espressões 1-Operadores Aritmeticos 2- Operadores Logicos 3- Operadores Relacionais
+
+ordem dos Operadores Logicos 1- ! , 2- && , 3- ||
+
+
+-----------------------------
+Operadores Ternarios
+
+1 - " ? " - verdadeiro, O que fazer se for verdade
+
+2 - " : " - Falso - O que fazer se for falso
+
+ex = 5 != 4 ? "verdadeiro" : "FALSO"
+
+se a primeira expressão for verdadeira vai mostrar na tela "verdadeiro" se não "Falso"
+
+
+-----------------------------
+DOM "Document Object Model"
+
+Dom serve para encontrar elementos html posso passar configurações nesses elementos como style ou mesmo sobreescrever algum texto pela sua arvore de elementos HTML
+
+Posso achar esse elementos pelo Nome do proprio elemento,class,id,name e seletor por QuerySelector duvidas aula:09
+
+ex: var d = windom.document.getElementsClass('classe_teste')
+    d.style.color = 'Blue'
+
+
+-----------------------------
+Eventos DOM
+
+Para mouse.
+
+1-mouseenter = O mouse entrou na area da div ou em qualquer outro elemento
+
+2-mousemove = O mouse moveu na area da div ou em qualquer outro elemento
+
+3-mousedown = O usuario clicou e segurou por um tempo na area da div ou em qualquer outro elemento
+
+4-mouseup = O usuario soltou o mouse ou parou de clicar na div ou em qualquer outro elemento
+
+5-click = o usuario deu um click na div ou em qualquer outro elemento
+
+6 = mouseout = o usuario saiu com o curso do mouse da area da div ou em qualquer outro elemento
+
+function = As funcoes serve para executar um bloco de comando sempre que forem chamadas igual em python
+ex: function clicou() {
+    bloco de codigo...
+}
+
+podem ser chamadas pelo proprio HTML passadas como parametros para eventos DOM como "onclick" ou
+
+addEventListener = usando esse comando no script na minha variavel posso passar no primeiro parametro o meu evento separando com virgula e a function que eu quero que ele realize. aula006
+
+
+-----------------------------
+FUNCOES EM JS APLICADAS EM HTML
+
+createElement = esse metodo serve para criar uma tag com o javascript de maneira dinamica ao acionar um comando por exemplo
+
+
+setAttribute = Posso adicionar um atributo em alguma tag especifica seria como um parametro no html como o "src" "min"
+"class" "id" dentro dos parenteses primeiro coloco o parametro, segundo o valor que ele recebe ex: img.setAttribute('src','image/menino.jpg')
+
+
+-----------------------------
+ARRAY
+
+
+Para criar arrays(listas) em javascript basta colocar na frente de uma variavel " [] "
+ex: let num = []
+
+num.push() = Esse metodo serve para adicionar itens a um array(lista) funciona igual ao metodo apedded em python
+
+num.sort() = Esse metodo serve para ordenar em ordem crescente um array(lista) funciona igual em python
+
+num.indexOf() = esse metodo é para achar o index de algum valor dentro do array(lista) caso encontrado retorna o index do valor se não encontrado retorna " -1 "
+
+Forma simplificada de percorrer por um array(lista) em javascript:
+
+for(let pos in num){
+
+    console.log('num[pos]')
+}
